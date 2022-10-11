@@ -1,1 +1,1 @@
-enum Notetype { textNote, listNote, audioNote, imageNote }
+enum NoteType { textNote, listNote, audioNote, imageNote }

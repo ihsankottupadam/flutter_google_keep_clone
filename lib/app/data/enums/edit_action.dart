@@ -1,0 +1,1 @@
+enum EditAction { newNote, editNote }

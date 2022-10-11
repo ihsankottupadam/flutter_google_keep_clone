@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:google_keep/app/data/enums/notetype.dart';
 
 import '../../../../core/values/colors.dart';
 import '../controllers/home_controller.dart';
@@ -19,13 +20,13 @@ class HomeView extends GetView<HomeController> {
         automaticallyImplyLeading: false,
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => controller.newNote(NoteType.textNote),
         backgroundColor: MyColors.lightBlue,
         child: const Icon(Icons.add),
       ),
       drawer: const AppDrawer(),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
-      bottomNavigationBar: const BottomBar(),
+      bottomNavigationBar: BottomBar(),
       body: const NoteView(),
     );
   }

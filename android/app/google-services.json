@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "890696349979",
+    "project_id": "goole-keep-clone",
+    "storage_bucket": "goole-keep-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890696349979:android:9714419cb2fc8c7bdc7bbe",
+        "android_client_info": {
+          "package_name": "com.izn.flnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890696349979-f7su43or09oah53q9v97nevptv67kvnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkyIV9d-fsM3MQv0CAEKsFMzvHf1afNdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890696349979-f7su43or09oah53q9v97nevptv67kvnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
