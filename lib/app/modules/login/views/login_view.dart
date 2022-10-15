@@ -19,7 +19,7 @@ class LoginView extends GetView<LoginController> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25),
           child: GoogleButton(
-            onPressed: () {},
+            onPressed: controller.logIn,
           ),
         ),
       ],

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../core/values/colors.dart';
+import '../controllers/home_controller.dart';
 
-class MainAppBar extends StatelessWidget {
+class MainAppBar extends GetWidget<HomeController> {
   const MainAppBar({Key? key}) : super(key: key);
 
   @override
@@ -29,7 +31,12 @@ class MainAppBar extends StatelessWidget {
               ),
             )),
             IconButton(onPressed: () {}, icon: const Icon(Icons.grid_view)),
-            CircleAvatar(radius: 15)
+            GestureDetector(
+                onTap: controller.authController.signInWithGoogle,
+                child: CircleAvatar(
+                    backgroundImage:
+                        NetworkImage(controller.authController.user!.photoURL!),
+                    radius: 15))
           ],
         ),
       ),
